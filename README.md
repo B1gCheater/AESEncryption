@@ -1,10 +1,29 @@
-# AESEncryption
-加密算法AES256_CBC
-使用Python中的加密库cryptography
-使用Pyside6作为UI控件与内部加密解密函数交互
-QT Designer 生成UI文件
-利用Pyside6-uic 转化UI文件为Py源代码
+AES256 加密工具
+一个基于AES256-CBC算法的图形化文件加密工具，提供安全可靠的文件加密保护。
 
+特性
+🔒 强加密算法: 使用AES256-CBC模式加密
 
+🖥️ 友好界面: 基于PySide6的图形化操作界面
 
+🔑 灵活密钥: 支持密码或直接密钥两种方式
 
+🌍 多语言支持: 完全支持UTF-8编码，兼容各种语言字符
+
+⚡ 高效性能: 使用Python cryptography原生加密库
+
+系统要求
+操作系统: Windows 64位
+
+Python环境: 需要安装相关依赖库
+
+技术实现
+加密算法: AES256-CBC
+
+密钥长度: 256位（32字节），16进制表示为64字符
+
+密钥生成: 通过SHA256哈希将任意长度密码转换为固定长度密钥
+
+UI框架: PySide6 + QT Designer
+
+加密库: Python cryptography
